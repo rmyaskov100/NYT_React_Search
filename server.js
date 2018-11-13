@@ -24,8 +24,8 @@ app.use(express.static("public"));
 // -------------------------------------------------
 
 // MongoDB Configuration configuration 
-mongoose.connect("mongodb://", { useNewUrlParser: true });
-// mongoose.connect("mongodb://localhost/TestNYTReact", {
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds249583.mlab.com:49583/heroku_j4b74cbw", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/TestNYTReactSearch", {
 //   useNewUrlParser: true
 // });
 
