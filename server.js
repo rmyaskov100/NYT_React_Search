@@ -24,11 +24,9 @@ app.use(express.static("public"));
 // -------------------------------------------------
 
 // MongoDB Configuration configuration 
-mongoose.connect("mongodb://heroku_ht48r83d:fgct50t7uoguq0kq31rrlmmlbq@ds129374.mlab.com:29374/heroku_ht48r83d", {
-  useMongoClient: true
-});
+mongoose.connect("mongodb://", { useNewUrlParser: true });
 // mongoose.connect("mongodb://localhost/TestNYTReact", {
-//   useMongoClient: true
+//   useNewUrlParser: true
 // });
 
 let db = mongoose.connection;
